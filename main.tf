@@ -3,3 +3,5 @@ resource "terraform_data" "example1" {
     command = "echo 'hello world'"
   }
 }
+
+resource "null_resource" "example" {}
