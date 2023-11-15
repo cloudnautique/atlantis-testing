@@ -1,6 +1,9 @@
+variable "XYS" {
+  default = "world"
+}
 resource "terraform_data" "example1" {
   provisioner "local-exec" {
-    command = "echo 'hello world'"
+    command = "echo 'hello, ${var.XYS}!!'"
   }
 }
 
