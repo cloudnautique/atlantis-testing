@@ -3,7 +3,7 @@ variable "XYS" {
 }
 resource "terraform_data" "example1" {
   provisioner "local-exec" {
-    command = "echo 'hello ${var.XYS}!!'"
+    command = "echo 'hello, ${var.XYS}!!'"
   }
 }
 
